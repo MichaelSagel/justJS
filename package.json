@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "sass": "^1.58.3"
+  },
+  "scripts": {
+    "compilation-scss": "sass style/index.scss style/index.css\n"
   }
 }
