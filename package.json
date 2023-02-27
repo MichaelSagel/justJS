@@ -3,7 +3,7 @@
     "sass": "^1.58.3"
   },
   "scripts": {
-    "compilation-scss": "sass style/index.scss style/index.css"
+    "compilation-scss": "sass --style=compressed style/index.scss style/index.css"
   },
   "dependencies": {
     "ress": "^5.0.2"
