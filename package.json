@@ -3,12 +3,14 @@
     "sass": "^1.58.3"
   },
   "scripts": {
-    "prod": "sass src/style/index.scss dist/index.css --style=compressed",
-    "dev": "sass src/style/index.scss dist/index.css --watch"
+    "prod": "sass src/style/index.scss src/style/index.css --style=compressed",
+    "dev": "sass src/style/index.scss dist/style/index.css",
+    "postcss": "postcss dist/style/index.css --output dist/style/index.css --use autoprefixer"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "ress": "^5.0.2"
   }
 }
