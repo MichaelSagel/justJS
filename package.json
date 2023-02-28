@@ -4,9 +4,9 @@
   },
   "scripts": {
     "prod": "sass src/style/index.scss src/style/index.css --style=compressed",
-    "dev": "sass src/style/index.scss dist/style/index.css",
-    "postcss": "postcss dist/style/index.css --output dist/style/index.css --use autoprefixer",
-    "kek": "uglifyjs src/script/index.js  --output dist/script/index.js"
+    "dev": "sass src/style/index.scss dist/index.css",
+    "postcss": "postcss dist/index.css --output dist/index.css --use autoprefixer",
+    "kek": "uglifyjs src/script/index.js  --output dist/index.js --compress --mangle"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
