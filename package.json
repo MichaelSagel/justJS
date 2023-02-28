@@ -3,7 +3,8 @@
     "sass": "^1.58.3"
   },
   "scripts": {
-    "scss": "sass --style=compressed style/index/index.scss style/index/index.css && sass --watch style/index"
+    "prod": "sass src/style/index.scss dist/index.css --style=compressed",
+    "dev": "sass src/style/index.scss dist/index.css --style=compressed --watch"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
