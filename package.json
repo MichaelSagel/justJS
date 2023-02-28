@@ -3,9 +3,11 @@
     "sass": "^1.58.3"
   },
   "scripts": {
-    "compilation-scss": "sass --style=compressed style/index.scss style/index.css"
+    "scss": "sass --style=compressed style/index/index.scss style/index/index.css && sass --watch style/index"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
     "ress": "^5.0.2"
   }
 }

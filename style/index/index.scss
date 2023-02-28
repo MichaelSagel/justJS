@@ -1,5 +1,5 @@
-@use 'space.scss';
-@use 'color.scss';
+@use '../space';
+@use '../color';
 
 $header-height: 300px;
 $header-form-height: 40px;
