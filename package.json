@@ -4,7 +4,7 @@
   },
   "scripts": {
     "prod": "sass src/style/index.scss dist/index.css --style=compressed",
-    "dev": "sass src/style/index.scss dist/index.css --style=compressed --watch"
+    "dev": "sass src/style/index.scss dist/index.css --watch"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
