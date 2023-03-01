@@ -7,8 +7,8 @@
     "sass": "^1.58.3"
   },
   "scripts": {
-    "prod": "gulp styleDev && gulp script",
-    "dev": "gulp styleProd && gulp script"
+    "prod": "gulp styleProd && gulp script",
+    "dev": "gulp styleDev && gulp script"
   },
   "dependencies": {
     "ress": "^5.0.2"
