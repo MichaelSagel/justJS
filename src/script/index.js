@@ -17,7 +17,6 @@
     list.appendChild(issue);
   };
 
-
   issueButton.onclick = () => {
     createIssueElement(issueDescription.value);
     issueDescription.value = '';
