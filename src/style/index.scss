@@ -1,0 +1,65 @@
+@use "./ress.css";
+@use './space.scss';
+@use './color.scss';
+
+$header-height: 300px;
+$header-form-height: 40px;
+$header-form-width: 900px;
+$issue-height: 45px;
+$delete-height: 45px;
+
+body {
+  height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: $header-height;
+  background-color: color.$red;
+}
+
+.header__headline {
+  color: color.$white;
+}
+
+.header__form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: $header-form-height;
+  width: $header-form-width;
+}
+
+.header__input-input {
+  height: 100%;
+  width: 100%;
+  padding-left: space.$space-200;
+  background-color: color.$white;
+}
+
+.header__input-button {
+  height: 100%;
+  background-color: color.$gray;
+}
+
+.list :nth-child(2n) {
+  background: color.$mousey;
+ }
+
+.issue {
+  padding-left: space.$space-500;
+  padding-right: space.$space-500;
+  height: $issue-height;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: color.$silver;
+}
+
+.delete:hover {
+  height: $delete-height;
+  padding: space.$space-200;
+  background-color: color.$red;
+}

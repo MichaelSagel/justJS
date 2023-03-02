@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.58.3"
+  },
+  "scripts": {
+    "prod": "gulp prod",
+    "dev": "gulp dev",
+    "watch": "gulp watch"
+  },
+  "dependencies": {
+    "ress": "^5.0.2"
+  }
+}
