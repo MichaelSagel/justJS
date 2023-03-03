@@ -1,24 +1,40 @@
-(() => {
-  const list = document.querySelector('.list');
-  const issueDescription = document.querySelector('.header__input-input');
-  const issueButton = document.querySelector('.header__input-button');
+const {
+  createApp,
+  ref,
+  onMounted,
+} = Vue;
 
-  const createIssueElement = (text) => {
-    const issue = document.createElement('li');
-    issue.className = 'issue';
-    issue.innerText = text;
+createApp({
+  setup() {
+    const list = ref(null);
+    const issueDescription = ref(null);
+    const issueButton = ref(null);
 
-    const cancel = document.createElement('button');
-    cancel.innerText = 'Delete';
-    cancel.className = 'delete';
-    cancel.addEventListener('click', e => e.target.parentElement.remove(), {once: true});
-    issue.appendChild(cancel);
+    onMounted(() => {
+      const createIssueElement = (text) => {
+        const issue = document.createElement('li');
+        issue.className = 'issue';
+        issue.innerText = text;
 
-    list.appendChild(issue);
-  };
+        const cancel = document.createElement('button');
+        cancel.innerText = 'Delete';
+        cancel.className = 'delete';
+        cancel.addEventListener('click', e => e.target.parentElement.remove(), {once: true});
+        issue.appendChild(cancel);
 
-  issueButton.onclick = () => {
-    createIssueElement(issueDescription.value);
-    issueDescription.value = '';
-  };
-})();
+        list.value.appendChild(issue);
+      };
+
+      issueButton.value.onclick = () => {
+        createIssueElement(issueDescription.value.value);
+        issueDescription.value.value = '';
+      };
+    });
+
+    return {
+      list,
+      issueDescription,
+      issueButton,
+    };
+  },
+}).mount('#app')

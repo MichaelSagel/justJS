@@ -11,6 +11,7 @@ $delete-height: 45px;
 body {
   height: 100vh;
 }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@ body {
   background: color.$mousey;
  }
 
-.issue {
+.issueElement {
   padding-left: space.$space-500;
   padding-right: space.$space-500;
   height: $issue-height;
