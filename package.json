@@ -1,15 +1,13 @@
 {
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-terser": "^2.1.0",
-    "sass": "^1.58.3"
+    "@vitejs/plugin-vue": "^4.0.0",
+    "sass": "^1.58.3",
+    "vite": "^4.1.4"
   },
   "scripts": {
-    "prod": "gulp prod",
-    "dev": "gulp dev",
-    "watch": "gulp watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "ress": "^5.0.2"
